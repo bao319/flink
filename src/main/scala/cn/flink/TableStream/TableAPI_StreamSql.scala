@@ -1,14 +1,8 @@
-package cn.flink.table
+package cn.flink.TableStream
 
-
-import org.apache.flink.api.common.serialization.SimpleStringSchema
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _}
 import org.apache.flink.table.api._
 import org.apache.flink.table.api.bridge.scala._
-import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
-import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindows
-import org.apache.flink.streaming.api.windowing.time.Time
-import org.apache.flink.streaming.connectors.kafka.{FlinkKafkaConsumer, FlinkKafkaConsumerBase}
 
 object TableAPI_StreamSql extends Serializable {
 
